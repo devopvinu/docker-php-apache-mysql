@@ -16,6 +16,12 @@
 
     <?php
     $conn = mysqli_connect('db', 'jake', 'jake', "myDb");
+    if ($conn){
+	    echo" Database Connected";
+    }else{
+	    echo"Unable To Connect To Database";
+    }
+
     $query = 'SELECT * From Person';
     $result = mysqli_query($conn, $query);
     echo '<table class="table table-striped">';
