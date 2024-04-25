@@ -21,6 +21,7 @@ services:
             MYSQL_PASSWORD: jake
             MYSQL_ROOT_PASSWORD: jake
         volumes:
+            - ./dump:/docker-entrypoint-initdb.d
             - persistent:/var/lib/mysql
         networks:
             - default
