@@ -12,7 +12,7 @@
 <body>
     <div class="container">
     <?php echo "<h1>Hi! I'm Jake</h1>"; ?>
-	<?php echo "<h3>This is Docker Compose Class!</h3>"; ?>
+	<?php echo "<h3>This is users data</h3>"; ?>
 
     <?php
     $conn = mysqli_connect('db', 'jake', 'jake', "myDb");
